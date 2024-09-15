@@ -1,0 +1,5 @@
+.title {
+    @include font (700, 4.8rem, 115%);
+    color: var(--color-text);
+    margin-bottom: 2.4rem;
+}

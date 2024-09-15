@@ -1,0 +1,75 @@
+.socials {
+    display: flex;
+
+    &__item {
+        width: 3.7rem;
+        height: 3.7rem;
+        border-radius: 50%;
+        background: #E4E4E4;
+        display: grid;
+        align-content: center;
+        padding-left: 0.5rem;
+        padding-right: 0.7rem;
+        transition: color .2s ease-in-out;
+
+        & img {
+            margin-top: 0.5rem;
+            width: 95%;
+            height: auto;
+        }
+
+        & img:first-child {
+            width: 100%;
+            margin-top: 0.1rem;
+        }
+    }
+
+    &__item:hover {
+        background: #efefef;
+        transition: color .2s ease-in-out;
+    }
+
+    &__item:first-child {
+        margin-right: 2.2rem;
+    }
+}
+
+@include for-laptop-desktop-xl {
+    .socials {
+        position: absolute;
+        top: 0;
+        left: 30rem;
+    }
+}
+
+@include for-tablet-landscape-lg {
+    .socials {
+        top: 6rem;
+        left: 0;
+    }
+}
+
+@include for-tablet-portrait-md {
+    .socials {
+        top: 0;
+        left: 21rem;
+    }
+}
+
+@media (max-width: 40em) {
+    .socials {
+        width: 12.4rem !important;
+        top: 32rem;
+        left: 50%;
+        transform: translate(-48%, 0);
+
+        &__item {
+            width: 4.7rem;
+            height: 4.7rem;
+        }
+
+        &__item:first-child {
+            margin-right: 3rem;
+        }
+    }
+}

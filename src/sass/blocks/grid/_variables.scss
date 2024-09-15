@@ -7,16 +7,13 @@ $container-max-widths: (
     //lg: 80rem,
     lg: 78rem,
     //md: 65rem,
-    md: 66rem,
-    //sm: 48rem,
-    sm: 48rem,
-    xs: 30rem) !default;
+    md: 66rem) !default;
 
 //Количество колонок
 $grid-columns: 12 !default;
 
 //Расстояние между элементами
-$grid-gap: 2rem !default;
+$grid-gap: 3rem !default;
 $grid-gap-side: calc($grid-gap / 2
 );
 
@@ -33,9 +30,7 @@ $grid-breakpoints: (
     xxl: 87.5em,
     xl: 75em,
     lg: 62em,
-    md: 48em,
-    sm: 36em,
-    xs: 20em) !default;
+    md: 48em) !default;
 
 /* $grid-breakpoints-min: (
     xs: 0,

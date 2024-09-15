@@ -1,14 +1,110 @@
-section.content
-    .container
-        h1.content__title Heading
-        .input
-            label
-                input(type="text" placeholder="Placeholder Text" class="content__input")
-                span.content__arrow
-                    img(src="img/arw2.svg", alt="Button Text")
+main
+    section.rent
+        .container
+            .rent__navigation
+                a.rent__navigation-item(href="#") Главная&ensp;&gt;&ensp; 
+                a.rent__navigation-item--active(href="#/rent") Аренда
 
-        .content__image
-            img(src="#", alt="#")
-        h2 Привет!!!!!
-        each item in news
-            li= item.name
+            .row.rent__hero
+                .col-8.rent__image
+                    img(src="img/dansers.jpg", alt="ансамбль песни и пляски")
+
+                .col-4 
+                    h2.title Аренда в ТУЦ “Сарафан”
+                    p.maintext.rent__desc Торговый центр «Сарафан», расположенный по адресу: г. Тула, ул. Путейская, д.5 &lpar;Площадь Московского вокзала&rpar;, предлагает помещения в аренду от собственника от 25 до 1000 кв. м.
+                    a.rent__download(href="#" download) Скачать презентацию
+                    h3.subtitle Преимущества аренды в нашем торговом центре:
+                    ul.rent__ui
+                        li.bultext ТЦ «Сарафан» находится в 5 минутах езды от центра города на площади Московского вокзала на одной из самых оживленных улиц города – Красноармейский проспект.
+                        li.bultext Рядом жилой массив, пересечение основных транспортных и пешеходных потоков – конечная остановка общественного транспорта, железнодорожный вокзал.
+                        li.bultext На территории ТЦ «Сарафан» есть бесплатная парковка для клиентов, более 500 машиномест, удобный подъезд.
+                        li.bultext Ежедневно наш ТЦ посещает порядка 10 000 тысяч человек различной целевой аудитории
+                        li.bultext Демократичные цены за аренду площади
+                        li.bultext У нас Вы можете арендовать площадь под магазины белья, одежды и обуви, салоны, точки общепита и др.
+
+                    p.maintext Открытие торговой точки в одном из оживленных мест города обеспечит доходность, развитие и процветание Вашего бизнеса.
+
+    section.boutique
+        .container
+            h2.title Более 130 бутиков и магазинов уже арендуют у нас помещения
+            .row 
+                .col-7.slider
+                    .slider__wrap
+                        input#r1(checked, type="radio", name="r", hidden)
+                        input#r2(type="radio", name="r", hidden)
+                        input#r3(type="radio", name="r", hidden)
+                        input#r4(type="radio", name="r", hidden)
+                        input#r5(type="radio", name="r", hidden)
+                        .slider__img.s1
+                            img(src="img/logo_familia.png", alt="familia")
+
+                        .slider__img
+                            img(src="img/logo_letual.png", alt="Лэтуаль")
+
+                        .slider__img
+                            img(src="img/logo_lenta.png", alt="Лента")
+
+                        .slider__img
+                            img(src="img/logo_sm.png", alt="Спортмастер")
+
+                        .slider__img
+                            img(src="img/logo_letual.png", alt="Л'Этуаль")
+
+                    #arrows.slider__arrows
+                        label.slider__arr(for="r1")
+                        label(for="r2")
+                        label(for="r3")
+                        label(for="r4")
+                        label(for="r5")
+
+                    .slider__nav
+                        label.slider__bullit(for="r1")
+                        label.slider__bullit(for="r2")
+                        label.slider__bullit(for="r3")
+
+                ul.col-5.boutique__info
+                    li.bultext Якорные арендаторы - Лента, Детский Мир, Технопарк, Модис, Familia, Читай город, Тутанхамон, Л'Этуаль
+                    li.bultext Бренды - EWA, Artigli, Gerzedo, Goergo, Du monde, Petek, Neri Karra, Ledy Collection, Paolo Conte, P'Cont, VINZER, Ace, Tonnelli, Milavitsa, и др.
+                    li.bultext Магазины спортивной одежды и инвентаря: Адреналин, Спорт Лайн
+                    li.bultext Зона фудкорта - Burger King, Империя вкуса, Про Кофий, Добрая сдоба
+                    li.bultext Салоны связи: Билайн, Мегафон, YOTA, Связной, Теле2
+                    li.bultext Зоосад, аптека «Здесь аптека», «Арт-оптика», Fresh Оптика, ковры, салоны штор, текстиль Missis Hatson и Home TEX, салон Арт-Самовар, посуда, подарки, картины, сувениры и другие.
+
+    section.gallery 
+        .container
+            .row.gallery__row
+                .col-2.gallery__numbers
+                    .gallery__part
+                        p.gallery__key Общая площадь<br>торгового центра
+                        p.gallery__value 25 816 м<sup>2</sup>
+
+                    .gallery__part
+                        p.gallery__key Площадь, сдаваемая<br>в аренду
+                        p.gallery__value 16 675 м<sup>2</sup>
+
+                    .gallery__part
+                        p.gallery__key Парковка<br>&lpar;машиномест&rpar;
+                        p.gallery__value 500
+
+                    .gallery__part
+                        p.gallery__key Посещаемость<br>&lpar;в неделю&rpar;
+                        p.gallery__value 100 000 чел.
+
+                .col-4.gallery__image
+                    img(src="img/uspolo.jpg", alt="магазин U.S. Polo")
+
+                .col-6.gallery__image
+                    img(src="img/main_entrance.jpg", alt="главный вход в магазин")
+
+            .row.gallery__row
+                .col-3.gallery__image
+                    img(src="img/hall.jpg", alt="верхний уровень")
+
+                .col-4.gallery__image
+                    img(src="img/stairs.jpg", alt="лестница на верхний уровень")
+
+                .col-5.gallery__image
+                    img(src="img/whitehouse.jpg", alt="магазин White house")
+
+
+            

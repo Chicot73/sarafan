@@ -1,0 +1,5 @@
+.subtitle {
+    @include font (700, 2.4rem, 115%);
+    color: var(--color-text);
+    margin-bottom: 3.4rem;
+}

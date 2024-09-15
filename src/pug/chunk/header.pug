@@ -1,27 +1,102 @@
 header.header
     .container
-        .row
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
-            .col-4.col-xxl-4.col-sm-12.col-xs-12.lll Водка
-            .col-8.col-xxl-8.col-sm-12.col-xs-12.lll Блок и рог
+        .row.header__upper
+            a.col-4.col-xxl-3.col-xl-2.header__logo(href="#")
+                img(src="img/logo.png", alt="главная страница")
+
+            .col-8.col-xxl-9.col-xl-10.header__uppermenu
+                nav.header__nav
+                    p.header__nav-item <span>Режим работы: </span>пн-вс 10:00-21:00<br>Лента 08:00-22:00
+                    a.header__nav-item(href="#/contacts.html") Контакты
+                    a.header__nav-item(href="#/map.html") Карта ТЦ
+                    form.search.search-h
+                        input.search__input(
+                            type="text",
+                            id="search-h",
+                            placeholder="Найти магазин",
+                            oninput=""
+                            )
+                        label.search__label(for="search-h")
+                        button.search__btn(type="submit")
+                            img(src="img/loupe.svg", alt="найти магазин")
+
+                    .header__colomn
+
+        input#burger(type="checkbox", hidden)
+        label(for="burger")
+            //- button.header__burger-btn
+            //-     .header__burger-line
+
+        .header__burger-menu
+            form.search-mob-h
+                input.search-mob-h__input(
+                    type="text",
+                    id="search-h",
+                    placeholder="Найти магазин",
+                    oninput=""
+                    )
+                label.search-mob-h__label(for="search-h")
+                button.search-mob-h__btn(type="submit")
+                    img(src="img/loupe.svg", alt="найти магазин")
+
+            .header__menu-1
+                a.header__menu-1-item(href="#/shops.html") Магазины
+                a.header__menu-1-item(href="#/restaurants.html") Кафе и рестораны
+                a.header__menu-1-item(href="#/services.html") Услуги и сервисы
+                a.header__menu-1-item(href="#/entertainment.html") Развлечения
+            .row
+                nav.col-1.col-xxl-2.col-xl-1.header__mainmenu
+                    a.header__mainmenu-item(href="#/about.html") О нас
+                    a.header__mainmenu-item(href="#/news.html") События
+                    a.header__mainmenu-item(href="#/gallery.html") Галерея
+                    a.header__mainmenu-item(href="#/rent.html") Аренда
+                    a.header__mainmenu-item(href="#/map.html") Карта ТЦ
+                    a.header__mainmenu-item(href="#/contacts.html") Контакты
+                    a.header__mainmenu-item(href="#/staff.html") Вакансии
+                    a.header__mainmenu-item(href="#/tenders.html") Тендеры
+ 
+                .col-5.col-xxl-3.col-lg-4.col-md-4.header__allshops
+                    h2.header__titlemenu Магазины
+                    nav.header__doblemenu
+                        a.header__menu-item(href="#/all.html") Все магазины
+                        a.header__menu-item(href="#/women.html") Женская одежда
+                        a.header__menu-item(href="#/men.html") Мужская одежда
+                        a.header__menu-item(href="#/kids.html") Детская одежда
+                        a.header__menu-item(href="#/kidsitems.html") Детские товары
+                        a.header__menu-item(href="#/shoes.html") Обувь
+                        a.header__menu-item(href="#/skin.html") Кожгалантерея
+                        a.header__menu-item(href="#/groceries.html") Продукты
+                        a.header__menu-item(href="#/digital.html") Цифровая и бытовая техника
+                        a.header__menu-item(href="#/parfum.html") Парфюмерия, косметика
+                        a.header__menu-item(href="#/jewelry.html") Ювелирные украшения
+                        a.header__menu-item(href="#/toys.html") Сувениры, подарки
+                        a.header__menu-item(href="#/helpful.html") Полезное
+                        a.header__menu-item(href="#/home.html") Товары для дома
+                        a.header__menu-item(href="#/sport.html") Спортивные товары, одежда
+                        a.header__menu-item(href="#/animals.html") Товары для животных
+
+                .col-2.col-xxl-3.col-lg-3.col-md-4.header__cafe
+                    h2.header__titlemenu Кафе и рестораны
+                    nav.header__menu
+                        a.header__menu-item(href="#/restaurants.html") Кафе и рестораны
+                        a.header__menu-item(href="#/fastfood.html") Рестораны быстрого обслуживания
+                        a.header__menu-item(href="#/cafe.html") Кофейни
+                        a.header__menu-item(href="#/icecreams.html") Мороженое и десерты
+
+                .col-2.col-xl-3.col-lg-3.col-md-3.header__services
+                    h2.header__titlemenu Услуги и сервисы
+                    nav.header__menu
+                        a.header__menu-item(href="#/atms.html") Банкоматы
+                        a.header__menu-item(href="#/connect.html") Салоны связи
+                        a.header__menu-item(href="#/hairdressers.html") Парикмахерские
+                        a.header__menu-item(href="#/administration.html") Администрация
+                        a.header__menu-item(href="#/groceries.html") Продукты
+                        a.header__menu-item(href="#/others.html") Другое
+
+                .col-2.col-lg-7.header__lastmenu
+                    h2.header__titlemenu Развлечения
+                    nav.header__menu
+                        a.header__menu-item(href="#/park.html") Джунгли парк
+                        a.header__menu-item(href="#/performans.html") Мероприятия
+                        a.header__menu-item(href="#/actions.html") Акции
+                        a.header__menu-item(href="#/news.html") Новости
