@@ -17,8 +17,13 @@
         color: var(--color-gray);
     }
 
+    &__image img {
+        height: 100%;
+        object-fit: cover;
+    }
+
     &__desc {
-        margin-bottom: 3.4rem;
+        margin-bottom: 3.5rem;
     }
 
     &__download {
@@ -27,7 +32,7 @@
         @include font (400, 2.4rem, 115%);
         color: var(--color-text);
         position: relative;
-        margin-bottom: 6.7rem;
+        margin-bottom: 6.8rem;
         transition: color .2s ease-in-out;
     }
 
@@ -48,5 +53,13 @@
 
     &__ui {
         margin-bottom: 5.2rem;
+    }
+}
+
+@include for-laptop-desktop-xl {
+    .rent {
+        &__image {
+            margin-bottom: 4rem;
+        }
     }
 }

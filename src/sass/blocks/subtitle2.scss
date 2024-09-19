@@ -1,0 +1,4 @@
+.subtitle2 {
+    @include font (700, 1.6rem, 115%);
+    color: var(--color-gray);
+}

@@ -6,10 +6,10 @@ main
                 a.rent__navigation-item--active(href="#/rent") Аренда
 
             .row.rent__hero
-                .col-8.rent__image
+                .col-8.col-xxl-9.col-xl-12.rent__image
                     img(src="img/dansers.jpg", alt="ансамбль песни и пляски")
 
-                .col-4 
+                .col-4.col-xxl-3.col-xl-12.rent__rentinfo
                     h2.title Аренда в ТУЦ “Сарафан”
                     p.maintext.rent__desc Торговый центр «Сарафан», расположенный по адресу: г. Тула, ул. Путейская, д.5 &lpar;Площадь Московского вокзала&rpar;, предлагает помещения в аренду от собственника от 25 до 1000 кв. м.
                     a.rent__download(href="#" download) Скачать презентацию
@@ -26,15 +26,20 @@ main
 
     section.boutique
         .container
-            h2.title Более 130 бутиков и магазинов уже арендуют у нас помещения
+            h2.title Более 130 бутиков и&nbsp;магазинов уже арендуют у&nbsp;нас помещения
             .row 
-                .col-7.slider
+                .col-7.col-xxl-8.col-xl-12.slider
                     .slider__wrap
                         input#r1(checked, type="radio", name="r", hidden)
                         input#r2(type="radio", name="r", hidden)
                         input#r3(type="radio", name="r", hidden)
-                        input#r4(type="radio", name="r", hidden)
-                        input#r5(type="radio", name="r", hidden)
+                        input#a1(checked, type="radio", name="r", hidden)
+                        input#a2(type="radio", name="r", hidden)
+                        input#a3(type="radio", name="r", hidden)
+                        input#a4(type="radio", name="r", hidden)
+                        input#a5(type="radio", name="r", hidden)
+                        input#a6(type="radio", name="r", hidden)
+
                         .slider__img.s1
                             img(src="img/logo_familia.png", alt="familia")
 
@@ -50,19 +55,22 @@ main
                         .slider__img
                             img(src="img/logo_letual.png", alt="Л'Этуаль")
 
-                    #arrows.slider__arrows
-                        label.slider__arr(for="r1")
-                        label(for="r2")
-                        label(for="r3")
-                        label(for="r4")
-                        label(for="r5")
+                        .slider__nav
+                            label.slider__bullit(for="r1")
+                            label.slider__bullit(for="r2")
+                            label.slider__bullit(for="r3")
 
-                    .slider__nav
-                        label.slider__bullit(for="r1")
-                        label.slider__bullit(for="r2")
-                        label.slider__bullit(for="r3")
+                        .slider__arrows
+                            label#pre.slider__pre(for="a1")
+                            label#nxt.slider__nxt(for="a4")
+                            label#pre.slider__pre(for="a2")
+                            label#nxt.slider__nxt(for="a5")
+                            label#pre.slider__pre(for="a3")
+                            label#nxt.slider__nxt(for="a6")
+                            label#pre.slider__pre(for="a3b")
+                            label#nxt.slider__nxt(for="a7")
 
-                ul.col-5.boutique__info
+                ul.col-5.col-xxl-4.col-xl-12.boutique__info
                     li.bultext Якорные арендаторы - Лента, Детский Мир, Технопарк, Модис, Familia, Читай город, Тутанхамон, Л'Этуаль
                     li.bultext Бренды - EWA, Artigli, Gerzedo, Goergo, Du monde, Petek, Neri Karra, Ledy Collection, Paolo Conte, P'Cont, VINZER, Ace, Tonnelli, Milavitsa, и др.
                     li.bultext Магазины спортивной одежды и инвентаря: Адреналин, Спорт Лайн
@@ -73,37 +81,37 @@ main
     section.gallery 
         .container
             .row.gallery__row
-                .col-2.gallery__numbers
+                .col-2.col-xl-12.gallery__numbers
                     .gallery__part
-                        p.gallery__key Общая площадь<br>торгового центра
+                        p.subtitle2.gallery__key Общая площадь<br>торгового центра
                         p.gallery__value 25 816 м<sup>2</sup>
 
                     .gallery__part
-                        p.gallery__key Площадь, сдаваемая<br>в аренду
+                        p.subtitle2.gallery__key Площадь, сдаваемая<br>в аренду
                         p.gallery__value 16 675 м<sup>2</sup>
 
                     .gallery__part
-                        p.gallery__key Парковка<br>&lpar;машиномест&rpar;
+                        p.subtitle2.gallery__key Парковка<br>&lpar;машиномест&rpar;
                         p.gallery__value 500
 
                     .gallery__part
-                        p.gallery__key Посещаемость<br>&lpar;в неделю&rpar;
+                        p.subtitle2.gallery__key Посещаемость<br>&lpar;в неделю&rpar;
                         p.gallery__value 100 000 чел.
 
-                .col-4.gallery__image
+                .col-4.col-xl-5.col-md-12.gallery__image
                     img(src="img/uspolo.jpg", alt="магазин U.S. Polo")
 
-                .col-6.gallery__image
+                .col-6.col-xl-7.col-md-12.gallery__image
                     img(src="img/main_entrance.jpg", alt="главный вход в магазин")
 
             .row.gallery__row
-                .col-3.gallery__image
+                .col-3.col-lg-5.col-md-12.gallery__image
                     img(src="img/hall.jpg", alt="верхний уровень")
 
-                .col-4.gallery__image
+                .col-4.col-lg-7.col-md-12.gallery__image
                     img(src="img/stairs.jpg", alt="лестница на верхний уровень")
 
-                .col-5.gallery__image
+                .col-5.col-lg-12.gallery__image
                     img(src="img/whitehouse.jpg", alt="магазин White house")
 
 
