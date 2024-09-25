@@ -4,7 +4,7 @@
     background: #FFFFFF;
     box-shadow: 0 -9px 17px 0 rgba(0, 0, 0, 0.1);
 
-    &__logo img {
+    &__logo a img {
         width: 17rem;
     }
 
@@ -87,7 +87,7 @@ a.footer__info-item:hover {
             padding-left: 1%;
         }
 
-        &__logo img {
+        &__logo a img {
             width: 85%;
         }
     }
@@ -154,7 +154,7 @@ a.footer__info-item:hover {
             margin-bottom: 7.8rem;
         }
 
-        &__logo img {
+        &__logo a img {
             width: 17.3rem;
         }
 
